@@ -10,217 +10,26 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.css" />
 	</head>
-	<body>
+	<body class="container">
+		<h1>This is my site</h1>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+		<div class="header">
+			Here are some of my favorite things in no particular order
+		</div>
 
-		<!-- Home -->
-			<div class="wrapper style1 first">
-				<article class="container" id="top">
-					<div class="row">
-						<div class="4u">
-							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
-						</div>
-						<div class="8u">
-							<header>
-								<h1>Hi. I'm <strong>Jonathan Lee</strong>.</h1>
-							</header>
-							<p>I'm a web developer versed in Ruby on Rails and Backbone.js</p>
-							<a href="#work" class="button big scrolly">Learn about what I do</a>
-						</div>
-					</div>
-				</article>
-			</div>
+		<div class="favoritethings">
+			<img src="https://i.redd.it/0c9faw5ewz0y.jpg">
+			<img src="https://pbs.twimg.com/profile_images/921546127945748481/jLWUM1D2_400x400.jpg">
+			<img src="http://i0.kym-cdn.com/entries/icons/original/000/019/241/enhanced-26298-1432220843-2.jpg">
+		</div>
 
-		<!-- Work -->
-			<div class="wrapper style2">
-				<article id="work">
-					<header>
-						<h2>Here's all the stuff I do.</h2>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="4u">
-								<section class="box style1">
-									<span class="icon featured fa-diamond"></span>
-									<h3>Ruby on Rails</h3>
-								</section>
-							</div>
-							<div class="4u">
-								<section class="box style1">
-									<span class="icon featured fa-coffee"></span>
-                  <h3>Javascript</h3>
-								</section>
-							</div>
-							<div class="4u">
-								<section class="box style1">
-									<span class="icon featured fa-database"></span>
-									<h3>SQL</h3>
-								</section>
-							</div>
-						</div>
-					</div>
-					<footer>
-						<p>I'm also interested in learning about NoSQL databases and other SPA frameworks like AngularJS.</p>
-						<a href="#portfolio" class="button big scrolly">See some of my recent work</a>
-					</footer>
-				</article>
-			</div>
-
-		<!-- Portfolio -->
-			<div class="wrapper style3">
-				<article id="portfolio">
-					<header>
-						<h2>Here’s some stuff I made recently.</h2>
-            <a class="button" href="https://s3.amazonaws.com/jvvlee/JonathanLeeResume.pdf">My Resume</a>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="4u">
-								<article class="box style2">
-									<a href="http://merlinsboard.jvvlee.com" class="image featured"><img src="images/pic01.png" alt="https://github.com/jvvlee/MerlinsBoard" /></a>
-									<h3><a href="http://merlinsboard.jvvlee.com">MerlinsBoard (Live Link)</a></h3>
-									<p>A course managament application built with Ruby on Rails and Backbone.js.<a href="https://github.com/jvvlee/MerlinsBoard">Github</a></p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box style2">
-									<a href="http://asteroids.jvvlee.com" class="image featured"><img src="images/pic02.png" alt="https://github.com/jvvlee/asteroids-master" /></a>
-									<h3><a href="http://asteroids.jvvlee.com">Asteroids (Live Link)</a></h3>
-									<p>An old favorite written with Javascript and HTML5 Canvas API. <a href="https://github.com/jvvlee/asteroids-master">Github</a></p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box style2">
-									<a href="https://github.com/jvvlee/ActiveRecordLite" class="image featured"><img src="images/pic03.png" alt="" /></a>
-									<h3><a href="https://github.com/jvvlee/ActiveRecordLite">Active Record Lite</a></h3>
-									<p>My own take on a useful tool.</p>
-								</article>
-							</div>
-						</div>
-<!-- 						<div class="row">
-							<div class="4u">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Tempus dolore</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-									<h3><a href="#">Feugiat aliquam</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-									<h3><a href="#">Sed amet ornare</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-						</div> -->
-					</div>
-					<footer>
-						<a href="#contact" class="button big scrolly">Get in touch with me</a>
-					</footer>
-				</article>
-			</div>
-
-		<!-- Contact -->
-			<div class="wrapper style4">
-				<article id="contact" class="container 75%">
-					<header>
-						<h2>Have me make stuff for you.</h2>
-					</header>            
-            <form action="//formspree.io/l33.jonathan@gmail.com" method="POST">
-            <div>
-              <div class="row">
-                <div class="6u">
-                  <input type="text" name="name" id="name" placeholder="Name" />
-                </div>
-                <div class="6u">
-                  <input type="text" name="email" id="email" placeholder="Email" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="12u">
-                  <input type="text" name="subject" id="subject" placeholder="Subject" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="12u">
-                  <textarea name="message" id="message" placeholder="Message"></textarea>
-                </div>
-              </div>
-              <div class="row 200%">
-                <div class="12u">
-                  <ul class="actions">
-                    <li><input type="submit" value="Send Message" /></li>
-                    <li><input type="reset" value="Clear Form" class="alt" /></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            </form>
-            
-						<div class="row">
-							<div class="12u">
-								<hr />
-								<h3>Find me on ...</h3>
-								<ul class="social">
-<!-- 									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-									<li><a href="https://www.linkedin.com/profile/view?id=175274525" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-<!-- 									<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-									<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li> -->
-									<li><a href="https://github.com/jvvlee" class="icon fa-github"><span class="label">Github</span></a></li>
-									<!--
-									<li><a href="#" class="icon fa-rss"><span>RSS</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>
-									<li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li>
-									<li><a href="#" class="icon fa-skype"><span>Skype</span></a></li>
-									<li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li>
-									<li><a href="#" class="icon fa-youtube"><span>YouTube</span></a></li>
-									<li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li>
-									<li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li>
-									<li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>
-									-->
-								</ul>
-								<hr />
-							</div>
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-				</article>
-			</div>
-
+		<div>
+			<a class="btn btn-primary btn-large" href="#">KAPOW</a>
+		</div>
 	</body>
 </html>
