@@ -5,16 +5,15 @@ body {
   width: 100%;
   --bgColor: grey;
   background-color: var(--bgColor);
-}
-
-body.wacky {
-  --bgColor: pink;
+  --displayStyle: block;
+  --displayStyle90s: none;
 }
 
 .container {
   width: 75%; 
   margin: 30px auto; 
   text-align: center;
+  display: var(--displayStyle);
 }
 
 h1{font-size: 36px;}
@@ -30,4 +29,27 @@ h2{font-size: 28px;}
   padding: 10px;
 }
 
+/**/
+#projects .projects_container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#projects .proj {
+  display: inline-block;
+}
+
+/**/
 #interests img {max-width: 30%;}
+
+/* 90s Specific Styles */
+
+body.nineties {
+  --bgColor: pink;
+  --displayStyle90s: block;
+}
+
+.container.nineties {
+  display: var(--displayStyle90s);
+  background: blue;
+}

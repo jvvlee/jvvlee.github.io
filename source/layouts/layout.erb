@@ -5,10 +5,19 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- https://developers.facebook.com/tools/debug/sharing -->
+    <meta property="og:url"                content="http://vibe.mpaulweeks.com" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="GOOD VIBES 🌈🌈🌈" />
+    <meta property="og:description"        content="rainbows and tunes" />
+    <meta property="og:image"              content="http://vibe.mpaulweeks.com/preview.png" />
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
-    <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
+    <%= stylesheet_link_tag "reset" %>
+    <%= stylesheet_link_tag "style" %>
+    <%= javascript_include_tag "init" %>
+
   </head>
   <body>
     <%= yield %>
