@@ -33,7 +33,7 @@
 		<div class="favoritethings">
 			<% data.interests.interests.each do |pair| %>
 				<% key, value = pair.first%>
-				<li class="interest" data-text="<%= key %>"><%= value %></li>
+				<li onClick="interestsTicker(this)" class="interest" data-text="<%= key %>"><%= value %></li>
 			<% end %>
 		</div>
 	</div>
