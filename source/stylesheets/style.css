@@ -16,8 +16,8 @@ body {
   display: var(--displayStyle);
 }
 
-h1{font-size: 36px;}
-h2{font-size: 28px;}
+h1 {font-size: 36px; font-family: 'hardpixelregular';}
+h2 {font-size: 28px; font-family: 'hardpixelregular'; margin-bottom: 15px;}
 
 .section {
   background: white;
@@ -27,6 +27,7 @@ h2{font-size: 28px;}
   border-radius: 5px;
   margin: 25px 0;
   padding: 10px;
+  font-family: 'lcd_solidregular';
 }
 
 /**/
