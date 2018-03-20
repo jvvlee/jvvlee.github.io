@@ -3,8 +3,8 @@ html {height: 100%; width: 100%;}
 body {
   height: 100%;
   width: 100%;
-  --bgColor: grey;
-  background-color: var(--bgColor);
+  --bgImage: url('../images/clouds.jpg');
+  background-image: var(--bgImage);
   --displayStyle: block;
   --displayStyle90s: none;
 }
@@ -40,13 +40,33 @@ h2 {font-size: 28px; font-family: 'hardpixelregular'; margin-bottom: 15px;}
   display: inline-block;
 }
 
-/**/
-#interests img {max-width: 30%;}
+#projects .proj img {
+  max-width: 100%;
+}
+
+/* interests */
+
+#interests .favoritethingsticker {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#interests li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 36px;
+}
+
+#bio p {
+  text-align: left;
+  margin-bottom: 1em;
+}
 
 /* 90s Specific Styles */
 
 body.nineties {
-  --bgColor: pink;
+  --bgImage: none;
   --displayStyle90s: block;
 }
 
