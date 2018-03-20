@@ -30,7 +30,7 @@ h2 {font-size: 28px; font-family: 'hardpixelregular'; margin-bottom: 15px;}
   font-family: 'lcd_solidregular';
 }
 
-/**/
+/* Projects */
 #projects .projects_container{
   display: flex;
   justify-content: space-evenly;

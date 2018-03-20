@@ -1,34 +1,29 @@
 <div class="container">
-	<h1>This is my site!</h1>
+	<h1>Did you know that 'Dog' in Polish is 'Pies'?</h1>
 
 	<div id="projects" class="section">
 		<h2>Projects</h2>
 
 		<div class="projects_container">
-			<div class="proj">
-				<a href="https://github.com/jvvlee/twitch-plays-wokemon">
-					Twitch Plays Pokemon Clone
-				</a>
-			</div>
-
-			<div class="proj">
-				<a href="https://github.com/jvvlee/NotesApplication">
-					Notes App in React.js
-				</a>
-			</div>
-
-			<div class="proj">
-				<a href="">
-					Some third thing I haven't decided, maybe the joint thing with Scott.
-				</a>
-			</div>
+			<% data.projects.each do |project, details| %>
+				<div class="proj">
+					<a href="<%= details.link %>">
+						<img src="<%= details.image %>">
+						<%= project.to_s %>
+					</a>
+					
+					<div class="description">
+						<%= details.description %>
+					</div>
+				</div>
+			<% end %>
 		</div>
 	</div>
 
 	<div id="interests" class="section">
 		<h2>Interests</h2>
 
-		<div class="favoritethingsticker"></div>
+		<div class="favoritethingsticker">Click on an Icon to learn more!</div>
 
 		<div class="favoritethings">
 			<% data.interests.interests.each do |pair| %>
@@ -41,10 +36,18 @@
 	<div id="bio" class="section">
 		<h2>Biography</h2>
 
-		<p>I like dogs, and sleeping in. Sometimes I'll go on ridiculously long walks. I used to like science a lot more but then life happened, so I just code things to try and impress people.</p>
+		<p>
+			I like dogs, and sleeping in. Sometimes I'll go on ridiculously long walks. I used to like science a lot more but then life happened, so I just code things to try and impress people.
+		</p>
+		<p>
+			I grew up in the suburbs of Long Island. I don't really recommend it. I spent most of my time playing video games and pretending I was a super anti-hero. I ended up going to NYU in New York City because I'm such a hipster.
+		</p>
+		<p>
+			I studied biology and it was alright, and I spent some time dissecting sea squirts in a lab. Then I interned in Washington D.C. because a bitch can't make up her mind. Now I'm here...
+		</p>
 	</div>
 </div>
 
 <%= partial "90s" %>
 
-<button onClick="change()">YOINK</button>
+<button onClick="change()">Click here to go back in time.</button>

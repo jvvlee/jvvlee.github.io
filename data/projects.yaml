@@ -1,0 +1,12 @@
+Twitch Plays Pokemon:
+  image: "../images/wokemon.jpg"
+  description: "Clone of twitch plays pokemon in golang."
+  link: "https://github.com/jvvlee/twitch-plays-wokemon"
+React.js To-Dos:
+  image: "../images/react.png"
+  description: "Simple to-do app done as practice for a new SPA framework."
+  link: "https://github.com/jvvlee/NotesApplication"
+MerlinsBoard:
+  image: "../images/merlin.png"
+  description: "Ancient project full of cringe."
+  link: "https://github.com/jvvlee/MerlinsBoard"
