@@ -7,6 +7,7 @@ body {
   background-image: var(--bgImage);
   --displayStyle: block;
   --displayStyle90s: none;
+  --headerFont: 'hardpixelregular';
 }
 
 .container {
@@ -16,8 +17,8 @@ body {
   display: var(--displayStyle);
 }
 
-h1 {font-size: 36px; font-family: 'hardpixelregular';}
-h2 {font-size: 28px; font-family: 'hardpixelregular'; margin-bottom: 15px;}
+h1 {font-size: 36px; font-family: var(--headerFont);}
+h2 {font-size: 28px; font-family: var(--headerFont); margin-bottom: 15px;}
 
 .section {
   background: white;
@@ -63,14 +64,48 @@ h2 {font-size: 28px; font-family: 'hardpixelregular'; margin-bottom: 15px;}
   margin-bottom: 1em;
 }
 
+.button-container {
+  text-align: center;
+}
+
+.button {
+  padding: 10px;
+  background: white;
+  font-family: 'lcd_solidregular';
+  color: black;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
 /* 90s Specific Styles */
 
 body.nineties {
   --bgImage: none;
   --displayStyle90s: block;
+  --displayStyle: none;
+  --bgImage: url('../images/middle_school_games.jpg');
+  --headerFont: 'Avalon Quest';
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-color: black;
 }
 
 .container.nineties {
   display: var(--displayStyle90s);
-  background: blue;
+}
+
+body.nineties h1:hover {
+  background-image: url('../images/fire.gif');
+  background-size: contain;
+}
+
+.button span {
+ display: var(--displayStyle);   
+}
+
+.button span.nineties {
+  display: var(--displayStyle90s);  
 }

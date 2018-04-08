@@ -1,35 +1,28 @@
 <div class="container nineties">
   <h1>This is my site!1!1!</h1>
 
-  <div id="projects" class="section">
-    <h2>Projectos</h2>
+	<div id="projects" class="section">
+		<div class="projects_container">
+			<% data.quizzes.quizzes.each do |pair| %>
+        <% img, link = pair.first%>
+				<div class="proj">
+					<a href="<%= link %>">
+						<img src="<%= '../images/' + img + '.jpg' %>">
+					</a>
+				</div>
+			<% end %>
+		</div>
+	</div>
 
-    <div class="proj">
-      <a href="https://github.com/jvvlee/twitch-plays-wokemon">
-        MRS SCHEIN IS A FUCKING BITCH
-      </a>
-    </div>
-
-    <div class="proj">
-      <a href="https://github.com/jvvlee/NotesApplication">
-        No one wants to date Ricky Buhr's ugly ass
-      </a>
-    </div>
-
-    <div class="proj">
-      <a href="">
-        Your mom
-      </a>
-    </div>
-  </div>
-
-  <div id="interests" class="section">
-    <h2>Interest0s</h2>
+  <div id="bloggy" class="section">
+    <h2>Current Mood</h2>
 
     <div class="favoritethings">
-      <img src="https://upload.wikimedia.org/wikipedia/en/1/11/Newgrounds.jpg">
-      <img src="http://llights.net/wp-content/uploads/2017/01/NO_School_flat.png">
-      <img src="http://i0.kym-cdn.com/entries/icons/original/000/013/391/3658935-samurai_jack.jpg">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/WCdJY_XHmtY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="current_mood">
+      Feeling: Heroic <img src="../images/nerdy.gif" class="classic_emoji">
     </div>
   </div>
 
