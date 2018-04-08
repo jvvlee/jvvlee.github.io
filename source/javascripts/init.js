@@ -1,6 +1,6 @@
 function change() {
   const body = document.querySelector('body');
-  body.classList.add("nineties");
+  body.classList.toggle("nineties");
 }
 
 function interestsTicker(element) {
