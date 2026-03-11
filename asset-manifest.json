@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jvvlee.github.io/static/css/main.494cba98.css",
+    "main.js": "/jvvlee.github.io/static/js/main.facf72f4.js",
+    "index.html": "/jvvlee.github.io/index.html",
+    "main.494cba98.css.map": "/jvvlee.github.io/static/css/main.494cba98.css.map",
+    "main.facf72f4.js.map": "/jvvlee.github.io/static/js/main.facf72f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.494cba98.css",
+    "static/js/main.facf72f4.js"
+  ]
+}
