@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import "node_modules/pixel-borders/src/styles/pixel-borders/pixel-borders-mixins";
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 9999;
+
+    @include pixel-borders(
+        $corner-size: 2,
+        $border-size: 6px,
+        $border-color: #10D7AE,
+        $border-inset-color: false
+    );
+}
+
+.modalContent {
+    font-family: 'Press Start 2P', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #0d0221;
+    text-align: center;
+}
+
+.links {
+    margin-top: 20px;
+
+    a {
+        display: block;
+        margin: 0 10px;
+        padding: 10px 20px;
+        background-color: #10D7AE;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: #0d0221;
+            color: #10D7AE;
+        }
+    }
+}
