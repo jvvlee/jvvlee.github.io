@@ -1,18 +1,16 @@
-.App {
-    background: red;
-    height: 100vh;
-}
+@import './globals.scss';
 
 .vaporwave-bg {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background: linear-gradient(
     to bottom,
     #0d0221 0%,
     #1a0533 30%,
     #ff6ec7 65%,
-    #ff9d00 100%
+    #ff9d00 99%,
+    #0d0221 100%
   );
   overflow: hidden;
 
@@ -46,13 +44,24 @@
   height: 50%;
 
   background-image:
-    linear-gradient(to right, #ff6ec7 2px,  transparent 1px),
-    linear-gradient(to bottom, #9EEFFF 2px, transparent 1px);
+    linear-gradient(to right, #ff6ec7 0.5px,  transparent 1px),
+    linear-gradient(to bottom, #9EEFFF 0.5px, transparent 1px);
   background-size: 2vh 1vw;
-  animation: slide 2s linear infinite;
+  animation: slide 1s linear infinite;
 
-  transform: perspective(300px) rotateX(75deg);
+  transform: perspective(100px) rotateX(75deg);
   opacity: 50%;
+}
+
+$mobile: 320px;
+
+@media (min-width: $mobile) {
+  .vaporwave-bg::after {
+    background-image:
+      linear-gradient(to right, #ff6ec7 2px,  transparent 2px),
+      linear-gradient(to bottom, #9EEFFF 2px, transparent 2px);
+    transform: perspective(300px) rotateX(75deg);  
+  }
 }
 
 @keyframes slide {
