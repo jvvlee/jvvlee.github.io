@@ -1,13 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './css/App.scss';
+import VaporwaveLayout from './layouts/VaporwaveLayout';
 import Modal from './components/modal';
+import { Routes, Route } from 'react-router';
 
 function App() {
   return (
-    <div className="App vaporwave-bg">
-      <Modal />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<VaporwaveLayout />} >
+          <Route index element={<Modal />} />
+          <Route path="/about" element={<Modal />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 

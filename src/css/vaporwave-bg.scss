@@ -46,21 +46,19 @@
   background-image:
     linear-gradient(to right, #ff6ec7 0.5px,  transparent 1px),
     linear-gradient(to bottom, #9EEFFF 0.5px, transparent 1px);
-  background-size: 2vh 1vw;
-  animation: slide 1s linear infinite;
+  background-size: 3vh 2vw;
+  animation: slide 2s linear infinite;
 
-  transform: perspective(100px) rotateX(75deg);
+  transform: perspective(200px) rotateX(75deg);
   opacity: 50%;
 }
-
-$mobile: 320px;
 
 @media (min-width: $mobile) {
   .vaporwave-bg::after {
     background-image:
       linear-gradient(to right, #ff6ec7 2px,  transparent 2px),
       linear-gradient(to bottom, #9EEFFF 2px, transparent 2px);
-    transform: perspective(300px) rotateX(75deg);  
+    transform: perspective(300px) rotateX(75deg);
   }
 }
 
