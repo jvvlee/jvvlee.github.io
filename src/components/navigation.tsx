@@ -9,7 +9,7 @@ const Modal: React.FC = () => {
             {location.pathname !== '/' && <Link to='/'>Back</Link>}
 
             {location.pathname === '/' && <Link to='/about'>About</Link>}
-            {location.pathname === '/' && <a href="">Resume</a>}
+            {location.pathname === '/' && <a href="https://jvvleesite.s3.us-east-1.amazonaws.com/JLResume_R.pdf" target="_blank" rel="noopener noreferrer">Resume</a>}
             {location.pathname === '/' && <a href="https://www.linkedin.com/in/jonathanl33" target="_blank" rel="noopener noreferrer">LinkedIn</a>}
         </div>
     )
